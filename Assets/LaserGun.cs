@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -14,6 +15,12 @@ public class LaserGun : MonoBehaviour
     void Update()
     {
         Shoot();
+        Move();
+    }
+
+    private void Move()
+    {
+        transform.Translate(transform.forward * 4);
     }
 
     void Shoot()
