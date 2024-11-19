@@ -16,6 +16,6 @@ public class HealthBar : MonoBehaviour
 
     private void Redraw(float value)
     {
-
+        _mySlider.value = value;
     }
 }
